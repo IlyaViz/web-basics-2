@@ -50,6 +50,7 @@ nav {
     background-color: lightgoldenrodyellow;
     grid-template-rows: 1fr;
     align-items: center;
+    justify-content: right;
 }
 
 nav ul {
