@@ -1,0 +1,121 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+p, h2, h3 {
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 73%;
+    word-break: break-all;
+    overflow-y: scroll;
+    max-height: 99%;
+}
+
+p {
+    right: 25px;
+}
+
+h3 {
+    text-align: left;
+}
+
+header h2, footer h2 {
+    background-color: white;
+    display: inline-block;
+    width: 22%;
+}
+
+header, footer {
+    background-color: lightblue;
+    height: 100px;
+}
+
+header, footer, main, nav, aside, .content, .info {
+    position: relative;
+}
+
+main, nav, aside, .content, .info {
+    display: inline-block;
+}
+
+main, aside {
+    height: calc(100vh - 200px);
+}
+
+main {
+    width: 80%;
+}
+
+nav, .content {
+    height: 91%;
+}
+
+nav {
+    width: 25%;
+    background-color: lightgoldenrodyellow;
+}
+
+nav ul {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    margin: 0;
+    margin-right: 25px;
+    right: 0;
+}
+
+.content {
+    float: right;
+    width: 75%;
+}
+
+.info {
+    height: 9.5%;
+    width: 100%;
+    background-color: lightgreen;
+    float: left;
+    overflow: hidden;
+    top: -1%;
+}
+
+.info h3 {
+    margin: 0px;
+    padding: 14px 0px 14px 5px;
+}
+
+aside {
+    background-color: lightgoldenrodyellow;
+    float: right;
+    width: 20%;
+}
+
+footer h2 {
+    text-align: left;
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header p, footer p {
+        width: 60%;
+    }
+
+    header h2, footer h2 {
+        width: 30%;
+    }
+}

@@ -1,0 +1,96 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+p, h2 {
+    margin: 10px 25px 10px 10px;
+    overflow-y: scroll;
+    word-break: break-all;
+    max-height: 100%;
+}
+
+nav, aside, .content {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+header, footer {
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header h2, footer h2 {
+    background-color: white;
+    text-align: right;
+    flex: 1;
+}
+
+header p, footer p {
+    text-align: right;
+    flex: 2;
+}
+
+nav {
+    background-color: lightgoldenrodyellow;
+    flex: 1;
+}
+
+nav ul {
+    margin-right: 25px;
+}
+
+main {
+    display: flex;
+    min-height: calc(100vh - 200px);
+}
+
+.main__left {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+}
+
+.main__left__top {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    background-color: white;
+    flex: 3;
+}
+
+aside {
+    background-color: lightgoldenrodyellow;
+    flex: 1;
+}
+
+.info {
+    background-color: lightgreen;
+    display: flex;
+}
+
+.info h3 {
+    overflow: hidden;
+    margin: 14px 0px 14px 5px;
+}
+
+@media (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    p, h2 {
+        margin: 10px 5px 10px 10px;
+    }
+}
