@@ -4,13 +4,13 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-p, h2 {
+p, h2, h3 {
     margin: 10px 25px 10px 10px;
-    overflow-y: scroll;
-    word-break: break-all;
-    max-height: 100%;
 }
 
 nav, aside, .content {
@@ -24,7 +24,6 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
 }
 
 header h2, footer h2 {
@@ -35,7 +34,7 @@ header h2, footer h2 {
 
 header p, footer p {
     text-align: right;
-    flex: 2;
+    flex: 4;
 }
 
 nav {
@@ -49,7 +48,7 @@ nav ul {
 
 main {
     display: flex;
-    min-height: calc(100vh - 200px);
+    flex: 1;
 }
 
 .main__left {
@@ -78,11 +77,6 @@ aside {
     display: flex;
 }
 
-.info h3 {
-    overflow: hidden;
-    margin: 14px 0px 14px 5px;
-}
-
 @media (max-width: 1000px) {
     aside {
         display: none;
@@ -90,7 +84,7 @@ aside {
 }
 
 @media (max-width: 500px) {
-    p, h2 {
+    p, h2, h3 {
         margin: 10px 5px 10px 10px;
     }
 }
