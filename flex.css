@@ -73,6 +73,10 @@ aside {
     display: flex;
 }
 
+footer h2 {
+    text-align: left;
+}
+
 @media (max-width: 1000px) {
     aside {
         display: none;
