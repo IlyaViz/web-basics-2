@@ -5,8 +5,14 @@ body {
     min-height: 100vh;
 }
 
-p, h2, h3 {
+
+p, h2, h3{
     margin: 10px 25px 10px 10px;
+    text-align: right;
+}
+
+footer h2, .info h3 {
+    text-align: left;
 }
 
 nav, aside, .content {
@@ -24,12 +30,10 @@ header, footer {
 
 header h2, footer h2 {
     background-color: white;
-    text-align: right;
     flex: 1;
 }
 
 header p, footer p {
-    text-align: right;
     flex: 4;
 }
 
@@ -71,8 +75,4 @@ aside {
 .info {
     background-color: lightgreen;
     display: flex;
-}
-
-footer h2 {
-    text-align: left;
 }
