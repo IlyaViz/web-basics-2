@@ -2,83 +2,55 @@ body {
     margin: 0;
 }
 
-p, h2, h3 {
-    display: inline-block;
-    vertical-align: middle;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.right-align {
     text-align: right;
-    word-break: break-all;
 }
 
-h2 {
-    width: 21%;
+.quarter-width {
+    width: 25%;
 }
 
-p {
-    width: 75%;
+.one-five-width {
+    width: 20%;
 }
 
-main p, aside p {
-    margin-left: 20%;
+.main {
+    width: 60%;
 }
 
-h2, h3 {
-    margin: 1%;
-}
-
-header h2, footer h2 {
-    background-color: white;
-}
-
-header, footer {
+.header {
     background-color: lightblue;
 }
 
-main, nav, aside, .content, .info {
-    display: inline-block;
-    vertical-align: middle;
-}
-    
-main {
-    width: 75%;
-}
-
-.content {
-    width: 69%;
-}
-
-nav {
+.sidebar, .aside {
     background-color: lightgoldenrodyellow;
-    width: 30%;
 }
 
-nav ul {
-    margin-left: 40%;
-}
-
-.info {
-    width: 100%;
+.footer {
     background-color: lightgreen;
 }
 
-aside {
-    background-color: lightgoldenrodyellow;
-    width: 24%;
+h2 {
+    background-color: white;
 }
 
-footer h2 {
-    text-align: left;
+p, h2, h3 {
+    margin: 10px 25px 10px 10px;
 }
 
-@media (max-width: 600px) {
-    nav ul {
-        margin-left: 0;
-    }
+nav ul {
+    margin-right: 25px;
+}
 
-    aside {
-        width: 23%;
-    }
-
-    .content {
-        width: 65%;
-    }
+nav ul li {
+    list-style-type: none;
 }
