@@ -74,25 +74,3 @@ footer {
 footer h2 {
     background-color: #ffffff;
 }
-
-@media (max-width: 1000px) {
-    body {
-        grid-template-columns: 1fr 3fr 0;
-    }
-
-    aside {
-        display: none;
-    }
-}
-
-@media (max-width: 500px) {
-    p, h2, h3 {
-        margin: 10px 5px 10px 10px;
-    }
-}
-
-@media (max-width: 430px) {
-    header, footer {
-        grid-template-columns: 1fr 2fr;
-    }
-}
